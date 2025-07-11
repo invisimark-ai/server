@@ -7,7 +7,7 @@ const PORT = process.env.port || 3000;
 
 app.use(morgan("dev"));
 
-app.get("/", (req, res) => {
+app.get("/", (_, res) => {
   const body = { message: "invisimark.ai" };
   res.json(body);
 });

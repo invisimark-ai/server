@@ -2,9 +2,9 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "tsx watch --clear-screen=false src/server.ts"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,8 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.10"
+    "@types/express": "^5.0.3",
+    "@types/morgan": "^1.9.10",
+    "tsx": "^4.20.3"
   }
 }
